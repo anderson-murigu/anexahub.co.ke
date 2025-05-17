@@ -27,12 +27,18 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <nav className="w-full bg-white border-b border-gray-200 py-4 px-8 flex gap-8 items-center shadow-sm mb-8">
-          <a href="/" className="font-bold text-lg hover:text-blue-600 transition-colors">Home</a>
+        <nav className="w-full bg-white border-b border-gray-200 py-4 px-4 sm:px-8 flex gap-6 sm:gap-8 items-center shadow-sm mb-8">
           <a href="/about" className="hover:text-blue-600 transition-colors">About Us</a>
           <a href="/services" className="hover:text-blue-600 transition-colors">Services</a>
           <a href="/portfolio" className="hover:text-blue-600 transition-colors">Portfolio</a>
           <a href="/contact" className="hover:text-blue-600 transition-colors">Contact</a>
+          <div className="ml-auto flex items-center pl-10">
+            <div className="h-8 border-l border-gray-300 mr-6" />
+            <a href="/" className="flex items-center gap-2 group">
+              <img src="/logo.png" alt="Anexahub Logo" className="h-10 w-auto transition-transform group-hover:scale-105" />
+              <span className="font-bold text-lg hover:text-blue-600 transition-colors hidden sm:inline">Home</span>
+            </a>
+          </div>
         </nav>
         {children}
       </body>

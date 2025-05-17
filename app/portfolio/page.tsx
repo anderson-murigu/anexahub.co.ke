@@ -26,18 +26,18 @@ const projects = [
 
 export default function PortfolioPage() {
   return (
-    <div className="max-w-5xl mx-auto py-16 px-4">
-      <h1 className="text-4xl font-bold mb-8 text-blue-700 text-center">Our Solutions in Action: Helping Kenyan SMEs Thrive</h1>
-      <p className="text-lg text-gray-700 mb-12 text-center max-w-2xl mx-auto">Here are a few examples of how Anexahub Ltd has provided effective IT solutions for small and medium-sized businesses. We focus on practical outcomes that enhance efficiency, ensure compliance, and support growth.</p>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+    <div className="max-w-5xl mx-auto py-8 px-2 sm:px-4 md:py-16">
+      <h1 className="text-3xl sm:text-4xl font-bold mb-6 sm:mb-8 text-blue-700 text-center">Our Solutions in Action: Helping Kenyan SMEs Thrive</h1>
+      <p className="text-base sm:text-lg text-gray-700 mb-8 sm:mb-12 text-center max-w-2xl mx-auto">Here are a few examples of how Anexahub Ltd has provided effective IT solutions for small and medium-sized businesses. We focus on practical outcomes that enhance efficiency, ensure compliance, and support growth.</p>
+      <div className="grid grid-cols-1 gap-6 sm:gap-8 md:grid-cols-2 mb-8 sm:mb-12">
         {projects.map((project, idx) => (
-          <div key={idx} className="bg-white rounded-lg shadow p-6 flex flex-col">
-            <div className="h-32 bg-gray-100 rounded mb-4 flex items-center justify-center overflow-hidden">
-              <img src={project.image} alt={project.title} className="object-cover h-full w-full" />
+          <div key={idx} className="bg-white rounded-lg shadow p-4 sm:p-6 flex flex-col">
+            <div className="w-full h-40 sm:h-32 bg-gray-100 rounded mb-4 flex items-center justify-center overflow-hidden">
+              <img src={project.image} alt={project.title} className="object-cover w-full h-full" />
             </div>
-            <h2 className="font-semibold text-lg mb-1">{project.title}</h2>
-            <p className="text-sm text-gray-500 mb-2">Client Type: {project.client}</p>
-            <ul className="text-gray-700 text-sm mb-2 list-disc pl-5">
+            <h2 className="font-semibold text-base sm:text-lg mb-1">{project.title}</h2>
+            <p className="text-xs sm:text-sm text-gray-500 mb-2">Client Type: {project.client}</p>
+            <ul className="text-gray-700 text-xs sm:text-sm mb-2 list-disc pl-5">
               {project.details.map((detail, i) => (
                 <li key={i}><span className="font-semibold">{detail.label}:</span> {detail.text}</li>
               ))}
@@ -45,9 +45,9 @@ export default function PortfolioPage() {
           </div>
         ))}
       </div>
-      <div className="text-center mt-8">
-        <p className="text-lg font-semibold mb-4">Let's add your success story here! Contact us to discuss your IT project.</p>
-        <a href="/contact" className="bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition">Contact Us</a>
+      <div className="text-center mt-6 sm:mt-8">
+        <p className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Let's add your success story here! Contact us to discuss your IT project.</p>
+        <a href="/contact" className="bg-blue-700 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold hover:bg-blue-800 transition">Contact Us</a>
       </div>
     </div>
   );

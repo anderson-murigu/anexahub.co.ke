@@ -38,10 +38,10 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="max-w-3xl mx-auto py-16 px-4">
-      <h1 className="text-4xl font-bold mb-4 text-blue-700 text-center">Get in Touch with Anexahub Ltd</h1>
-      <p className="text-lg text-gray-700 mb-10 text-center">We're here to help your Nairobi or Kenya-based SME with all its IT needs. Reach out today for a consultation or support.</p>
-      <form className="bg-white rounded-lg shadow p-8 mb-10 space-y-6" onSubmit={handleSubmit}>
+    <div className="max-w-3xl mx-auto py-8 px-2 sm:px-4 md:py-16">
+      <h1 className="text-3xl sm:text-4xl font-bold mb-4 sm:mb-8 text-blue-700 text-center">Get in Touch with Anexahub Ltd</h1>
+      <p className="text-base sm:text-lg text-gray-700 mb-6 sm:mb-10 text-center">We're here to help your Nairobi or Kenya-based SME with all its IT needs. Reach out today for a consultation or support.</p>
+      <form className="bg-white rounded-lg shadow p-4 sm:p-8 mb-8 sm:mb-10 space-y-4 sm:space-y-6" onSubmit={handleSubmit}>
         <div className="flex flex-col sm:flex-row gap-4">
           <div className="flex-1">
             <label className="block text-gray-700 font-medium mb-1">Full Name</label>
@@ -82,8 +82,8 @@ export default function ContactPage() {
         {success && <p className="text-green-600 text-center font-medium mt-2">{success}</p>}
         {error && <p className="text-red-600 text-center font-medium mt-2">{error}</p>}
       </form>
-      <div className="bg-gray-50 rounded-lg p-6 text-gray-700">
-        <h2 className="text-xl font-semibold mb-2 text-blue-700">Our Contact Information</h2>
+      <div className="bg-gray-50 rounded-lg p-4 sm:p-6 text-gray-700">
+        <h2 className="text-lg sm:text-xl font-semibold mb-2 text-blue-700">Our Contact Information</h2>
         <p className="mb-1"><span className="font-semibold">Email:</span> <a href="mailto:info@anexahub.co.ke" className="text-blue-700 hover:underline">info@anexahub.co.ke</a></p>
         <p className="mb-1"><span className="font-semibold">Phone:</span> <a href="tel:0710578231" className="text-blue-700 hover:underline">0710 578 231</a></p>
         <p className="mb-1"><span className="font-semibold">Address:</span></p>
