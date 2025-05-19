@@ -1,5 +1,4 @@
 {
-  {
   "name": "it-company-website",
   "version": "0.1.0",
   "private": true,
@@ -9,9 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "export": "next export"
-    "engines": {
+  },
+  "engines": {
     "node": "22.11.0"
-    }
   },
   "dependencies": {
     "react": "^19.0.0",
